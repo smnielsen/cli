@@ -12,7 +12,8 @@
     "eslint": "eslint --ext js,jsx,ts,tsx .",
     "prettier": "prettier --check \"./**/*.+(js|jsx|ts|tsx|json|md)\"",
     "lint": "yarn run eslint && yarn run prettier",
-    "lint:fix": "yarn run eslint --fix && yarn run prettier --write"
+    "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
+    "test": "cover-my-ass && yarn lint"
   },
   "dependencies": {
     "commander": "^5.1.0",
@@ -24,12 +25,16 @@
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
+    "@smnielsen/cover-my-ass": "^0.0.2",
     "@smnielsen/eslint-config": "^0.4.1",
     "@smnielsen/prettier-config": "^0.1.0",
+    "chai": "^4.2.0",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "husky": "^4.2.5",
+    "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
+    "mocha": "^8.0.1",
     "prettier": "^2.0.5"
   },
   "lint-staged": {

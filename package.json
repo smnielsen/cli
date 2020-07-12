@@ -8,6 +8,7 @@
   "bin": {
     "smn": "bin/smn-cli.js"
   },
+  "private": "true",
   "scripts": {
     "eslint": "eslint --ext js,jsx,ts,tsx .",
     "prettier": "prettier --check \"./**/*.+(js|jsx|ts|tsx|json|md)\"",

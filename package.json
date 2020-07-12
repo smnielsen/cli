@@ -14,7 +14,8 @@
     "prettier": "prettier --check \"./**/*.+(js|jsx|ts|tsx|json|md)\"",
     "lint": "yarn run eslint && yarn run prettier",
     "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
-    "test": "cover-my-ass && yarn lint"
+    "test": "cover-my-ass && yarn lint",
+    "postinstall": "node bin/post-install.js"
   },
   "dependencies": {
     "commander": "^5.1.0",
